@@ -1,0 +1,156 @@
+       @import "./_minix.scss";
+       @import "./common.scss";
+       html,
+       body {
+           width: 100%;
+           height: 100%;
+       }
+       
+       .wrapper {
+           width: 100%;
+           height: 100%;
+           @include box_flex;
+           @include direction(column);
+           header {
+               width: 100%;
+               height: pxTorem(80px);
+               @include box_flex;
+               // @include justify;
+               @include align;
+               >img {
+                   width: pxTorem(60px);
+                   height: pxTorem(60px);
+                   margin: 0 pxTorem(10px);
+               }
+               >div:nth-child(2) {
+                   margin: pxTorem(25px);
+                   h3 {
+                       font-size: pxTorem(16px);
+                       span {
+                           font-size: pxTorem(14px);
+                           color: orange;
+                       }
+                   }
+                   p {
+                       margin: pxTorem(10px) 0;
+                       span:nth-child(1) {
+                           display: inline-block;
+                           width: pxTorem(30px);
+                           height: pxTorem(20px);
+                           background: hsl(66, 69%, 78%);
+                           margin-right: pxTorem(10px);
+                       }
+                       span:nth-child(2) {
+                           color: #ccc;
+                           font-size: pxTorem(16px);
+                       }
+                   }
+               }
+               >div:nth-child(3) {
+                   margin: 0 pxTorem(20px);
+                   color: #ccc;
+                   font-size: pxTorem(16px);
+                   >img {
+                       width: pxTorem(33px);
+                       height: pxTorem(33px);
+                   }
+               }
+           }
+           section {
+               width: 100%;
+               @include box_flex;
+               @include flex;
+               @include direction(column);
+               .big-photo {
+                   @include box_flex;
+                   width: 100%;
+                   height: pxTorem(160px);
+                   background: red;
+                   img {
+                       width: 100%;
+                       height: pxTorem(160px);
+                   }
+               }
+               .tab {
+                   width: 100%;
+                   height: pxTorem(60px);
+                   ul {
+                       width: 100%;
+                       height: pxTorem(60px);
+                       @include box_flex;
+                       @include align;
+                       border-bottom: 1px solid#ccc;
+                       >li {
+                           @include flex;
+                           margin: 0 auto;
+                           text-align: center;
+                           line-height: pxTorem(60px);
+                           font-size: pxTorem(16px);
+                       }
+                       >li:first-child {
+                           color: orange;
+                           border-bottom: pxTorem(1px) solid orange;
+                       }
+                   }
+               }
+               .list {
+                   width: 100%;
+                   @include flex;
+                   @include box_flex;
+                   @include direction(column);
+                   overflow-y: auto;
+                   div {
+                       margin: pxTorem(15px) 0;
+                       padding-bottom: pxTorem(15px);
+                       @include flex;
+                       border-bottom: pxTorem(1px) solid #ccc;
+                       dl {
+                           dt {
+                               @include box_flex;
+                               @include justify;
+                               //    @include align;
+                               margin-top: pxTorem(6px);
+                               img {
+                                   width: 70%;
+                                   height: 70%;
+                               }
+                               width: 30%;
+                               height: 30%;
+                           }
+                           dd {
+                               padding-right: pxTorem(25px);
+                               >span {
+                                   color: #ccc;
+                               }
+                               h2 {
+                                   font-size: pxTorem(16px);
+                                   span {
+                                       font-size: pxTorem(15px);
+                                       background: #5ADAD0;
+                                       @include flex;
+                                       margin-left: pxTorem(145px);
+                                   }
+                               }
+                           }
+                           @include box_flex;
+                       }
+                   }
+               }
+           }
+           footer {
+               width: 100%;
+               height: pxTorem(50px);
+               @include box_flex;
+               >dl {
+                   @include direction(column);
+                   @include box_flex;
+                   @include flex;
+                   @include justify;
+                   @include align;
+                   img {
+                       width: pxTorem(30px);
+                       height: pxTorem(30px);
+                   }
+               }
+           }
+       }

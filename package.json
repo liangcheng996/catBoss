@@ -1,0 +1,27 @@
+{
+    "name": "catBoss",
+    "version": "1.0.0",
+    "description": "catBoss",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/liangcheng996/catBoss.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/liangcheng996/catBoss/issues"
+    },
+    "homepage": "https://github.com/liangcheng996/catBoss#readme",
+    "devDependencies": {
+        "gulp": "^4.0.0",
+        "gulp-clean-css": "^4.0.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-uglify": "^3.0.1",
+        "gulp-webserver": "^0.9.1"
+    }
+}
